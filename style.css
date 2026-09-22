@@ -1,0 +1,36 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f7f8fc;--card:#fff;--text:#111827;--muted:#667085;--accent:#2563eb;--accent-dark:#1d4ed8;--border:#e6e8ef}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(255,255,255,.92);border-bottom:1px solid var(--border)}
+.brand{font-size:24px;font-weight:800}.brand span{color:var(--accent)}
+.nav-btn,.primary-btn{display:inline-block;text-decoration:none;color:white;background:var(--accent);padding:11px 18px;border-radius:10px;font-weight:700}
+.nav-btn:hover,.primary-btn:hover{background:var(--accent-dark)}
+.hero{max-width:850px;margin:auto;padding:90px 20px 70px;text-align:center}
+.badge{display:inline-block;background:#eaf1ff;color:#1d4ed8;padding:7px 13px;border-radius:999px;font-size:14px;font-weight:700}
+h1{font-size:clamp(40px,8vw,68px);line-height:1.05;margin:20px 0;letter-spacing:-2px}
+.hero-text{color:var(--muted);font-size:19px;max-width:680px;margin:auto}
+.price-card{max-width:420px;margin:32px auto 25px;padding:25px;background:var(--card);border:1px solid var(--border);border-radius:18px;box-shadow:0 12px 35px rgba(15,23,42,.07);display:flex;align-items:center;justify-content:space-between;text-align:left}
+.price-card div:first-child{display:flex;flex-direction:column}.price-card .small{font-size:12px;font-weight:800;color:var(--muted)}
+.price-card strong{font-size:38px;line-height:1.1}.price-card span:last-child{color:var(--muted)}
+.check{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#e8f7ee;color:#16834a;font-size:24px;font-weight:800}
+.note{margin-top:14px;color:var(--muted);font-size:14px}
+.steps,.requirements,.payments{max-width:1050px;margin:0 auto;padding:65px 20px}
+h2{font-size:32px;margin-bottom:25px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid article{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:25px}
+.number{width:38px;height:38px;border-radius:50%;background:#eaf1ff;color:var(--accent);display:grid;place-items:center;font-weight:800;margin-bottom:15px}
+h3{margin-bottom:6px}.grid p,.requirements li{color:var(--muted)}
+.requirements ul{max-width:760px;margin:auto;padding:25px 35px;background:var(--card);border:1px solid var(--border);border-radius:16px}
+.requirements li{margin:9px 0}
+.section-intro{max-width:650px;margin:-10px auto 30px;text-align:center;color:var(--muted)}
+.payment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.payment-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:24px;display:flex;align-items:center;gap:16px;min-height:125px;box-shadow:0 10px 28px rgba(15,23,42,.05);transition:.2s}
+.payment-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(15,23,42,.09)}
+.payment-icon{flex:0 0 58px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:28px;background:#111827;color:white}
+.cbe-icon{border-radius:15px;font-size:13px}
+.payment-card h3{font-size:17px}.payment-card p{color:var(--muted);font-size:14px}.payment-note{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+.sell{max-width:1050px;margin:20px auto 70px;padding:42px 30px;border-radius:22px;background:#111827;color:white;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.sell h2{text-align:left;margin:8px 0}.sell p{color:#cbd5e1}.sell .badge{background:#1f2937;color:#93c5fd}
+.sell-actions{display:flex;gap:12px;flex-wrap:wrap}.secondary-btn{text-decoration:none;color:white;border:1px solid #475569;padding:11px 18px;border-radius:10px;font-weight:700}.secondary-btn:hover{background:#1f2937}
+footer{text-align:center;padding:28px 20px;color:var(--muted);border-top:1px solid var(--border);background:white;font-size:14px}.footer-note{margin-top:5px}
+@media(max-width:700px){.nav{padding:0 18px}.nav-btn{display:none}.hero{padding-top:65px}.grid,.payment-grid{grid-template-columns:1fr}.sell{margin:10px 20px 50px;flex-direction:column;align-items:flex-start}.sell h2{text-align:left}.sell-actions{width:100%}.sell-actions a{flex:1;text-align:center}}
