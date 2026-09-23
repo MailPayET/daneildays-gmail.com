@@ -1,5 +1,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#f7f8fc;--card:#fff;--text:#111827;--muted:#667085;--accent:#2563eb;--accent-dark:#1d4ed8;--border:#e6e8ef}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
 body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 .nav{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(255,255,255,.92);border-bottom:1px solid var(--border)}
 .brand{font-size:24px;font-weight:800}.brand span{color:var(--accent)}
